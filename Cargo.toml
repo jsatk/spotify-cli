@@ -1,8 +1,8 @@
 [package]
 name = "spotify-cli"
 version = "0.1.0"
-authors = ["Stephen Lazaro <stephen.lazaro@gmail.com>"]
-edition = "2018"
+authors = ["Stephen Lazaro <stephen.lazaro@gmail.com>", "Jesse Atkinson <jesse@jsatk.us>"]
+edition = "2019"
 
 [dependencies]
 serde = "0.9.0"
