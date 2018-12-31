@@ -1,0 +1,14 @@
+{
+    "README.md": {
+        "type": "readme"
+    },
+    "src/*.rs": {
+        "alternate": "src/{}:test.rs",
+        "type": "source"
+    },
+    "src/*:test.rs": {
+        "alternate": "src/{}.rs",
+        "type": "test",
+        "dispatch": "cargo test {file}"
+    }
+}
