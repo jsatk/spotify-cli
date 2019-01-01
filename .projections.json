@@ -3,12 +3,15 @@
         "type": "readme"
     },
     "src/*.rs": {
-        "alternate": "src/{}:test.rs",
-        "type": "source"
+        "type": "src",
+        "alternate": "tests/{}.rs"
     },
-    "src/*:test.rs": {
-        "alternate": "src/{}.rs",
+    "tests/*.rs": {
         "type": "test",
-        "dispatch": "cargo test {file}"
+        "alternate": "src/{}.rs",
+        "dispatch": "cargo test {}"
+    },
+    "Cargo.toml": {
+        "type": "config"
     }
 }
